@@ -12,7 +12,7 @@
         "description": "Jantar",
         "category": "Compra",
         "type": "outcome",
-        "price": 1000,
+        "price": 60,
         "createdAt": "2024-03-14T18:40:35.985Z"
     }]
 }
