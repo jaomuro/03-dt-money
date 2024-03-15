@@ -1,26 +1,52 @@
 {
-    "transactions": [{
-        "id": 1,
-        "description": "Desenvolvimento de dados",
-        "category": "Venda",
-        "type": "income",
-        "price": 10000,
-        "createdAt": "2024-03-14T18:44:35.985Z"
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de dados",
+      "category": "Venda",
+      "type": "income",
+      "price": 10000,
+      "createdAt": "2024-03-14T18:44:35.985Z"
     },
     {
-        "id": 2,
-        "description": "Jantar",
-        "category": "Compra",
-        "type": "outcome",
-        "price": 60,
-        "createdAt": "2024-03-14T18:40:35.985Z"
+      "id": 2,
+      "description": "Jantar",
+      "category": "Compra",
+      "type": "outcome",
+      "price": 60,
+      "createdAt": "2024-03-14T18:40:35.985Z"
     },
     {
-        "id": 3,
-        "description": "Curso de React",
-        "category": "Eduçação",
-        "type": "outcome",
-        "price": 1900,
-        "createdAt": "2024-03-14T18:40:35.985Z"
-    }]
+      "id": 3,
+      "description": "Curso de React",
+      "category": "Eduçação",
+      "type": "outcome",
+      "price": 1900,
+      "createdAt": "2024-03-14T18:40:35.985Z"
+    },
+    {
+      "description": "Compra de cabos",
+      "category": "Reforma",
+      "type": "outcome",
+      "price": 500,
+      "createdAt": "2024-03-15T14:23:16.176Z",
+      "id": 4
+    },
+    {
+      "description": "Salário dia 20",
+      "category": "Salário",
+      "type": "income",
+      "price": 905,
+      "createdAt": "2024-03-15T14:24:22.610Z",
+      "id": 5
+    },
+    {
+      "description": "Pastel",
+      "category": "Alimentação",
+      "type": "outcome",
+      "price": 5,
+      "createdAt": "2024-03-15T14:40:35.417Z",
+      "id": 6
+    }
+  ]
 }
