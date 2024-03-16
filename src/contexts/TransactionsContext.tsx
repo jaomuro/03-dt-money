@@ -34,12 +34,12 @@ export const TransactionsContext = createContext<TransactionContextType>(
 export function TransactionsProvider({ children }: TransactionProviderProps) {
   const [transactions, setTransactions] = useState<TransactionType[]>([]);
 
-  async function fetchTransactions(query?: string) {
+  const fetchTransactions = useCallback(async (query?: string) => {
     const response = await api.get("transactions", {
       params: { q: query, _sort: "createdAt", _order: "desc" },
     });
     setTransactions(response.data);
-  }
+  }, []);
 
   const createTransaction = useCallback(async (data: newTransactionProps) => {
     const { category, description, price, type } = data;
@@ -57,7 +57,7 @@ export function TransactionsProvider({ children }: TransactionProviderProps) {
 
   useEffect(() => {
     fetchTransactions();
-  }, []); // chamada para a API
+  }, [fetchTransactions]); // chamada para a API
 
   return (
     <TransactionsContext.Provider
